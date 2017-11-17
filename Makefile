@@ -1,9 +1,9 @@
 PREFIX=docker-machine-driver-kvm
-MACHINE_VERSION=v0.10.0
+MACHINE_VERSION=v0.12.2
 GO_VERSION=1.8.1
 DESCRIBE=$(shell git describe --tags)
 
-TARGETS=$(addprefix $(PREFIX)-, alpine3.4 alpine3.5 ubuntu14.04 ubuntu16.04 centos7)
+TARGETS=$(addprefix $(PREFIX)-, alpine3.4 alpine3.5 ubuntu14.04 ubuntu16.04 centos7 fedora26)
 
 build: $(TARGETS)
 
